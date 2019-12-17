@@ -26,7 +26,7 @@ public class AppTest {
     private static final int PORT = 31662;
     private static JedisPool jedisPool = new JedisPool(ADDR, PORT);
     private static CountDownLatch cdl = new CountDownLatch(10);
-
+ 
     public static Jedis getJedis() {
         return jedisPool.getResource();
     }
